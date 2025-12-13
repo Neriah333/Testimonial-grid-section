@@ -8,16 +8,17 @@ body {
 
 @media (min-width: 601px) {
   body {
-    display: grid;
     font-size: 13px;
    }
 
   .testimonials {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
     gap: 20px;
     padding: 40px;
-    
+    margin-top: 50px;
   }
 
   .photo-and-name {
