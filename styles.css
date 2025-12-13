@@ -9,7 +9,7 @@ body {
 @media (min-width: 601px) {
   body {
     display: grid;
-
+    font-size: 13px;
    }
 
   .testimonials {
@@ -23,12 +23,34 @@ body {
   .photo-and-name {
       display: flex;
       flex-direction: row;
-      gap: 10px;
-    }
+      align-items: center;
+      gap: 20px;
+  }
+
+  .name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+  }
+
+  .name h4 {
+    margin: 0;
+    line-height: 1.1;
+    
+  }
+
+  .name p {
+    margin: 0;
+    line-height: 1;
+  }
 
   .testimonials img {
     border-radius: 50%;
-    border: 3px solid hsl(0, 0%, 100%);
+    border: 2px solid hsl(0, 0%, 100%);
+    width: 30px;
+    height: 30px;
   }
 
   .testimonial1 {
@@ -73,31 +95,52 @@ body {
 }
 
 @media (max-width: 600px) {
-    .testimonials {
+  .testimonials {
       display: flex;
       flex-direction: column;
       gap: 20px;
       padding: 10px;
-    }
+  }
 
-    .photo-and-name {
+  .photo-and-name {
       display: flex;
-      flex-direction: column;
-      
-      gap: 10px;
-    }
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+  }
 
-      .testimonials img {
-      border-radius: 50%;
-      border: 3px solid hsl(0, 0%, 100%);
-    }
+  .name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+  }
+
+  .name h4 {
+    margin: 0;
+    line-height: 1.1;
+    
+  }
+
+  .name p {
+    margin: 0;
+    line-height: 1;
+  }
+
+  .testimonials img {
+    border-radius: 50%;
+    border: 2px solid hsl(0, 0%, 100%);
+    width: 30px;
+    height: 30px;
+  }
 
     .testimonial1 {
       background-color: hsl(263, 55%, 52%);
       padding: 20px;
       border-radius: 10px;
       color:hsl(0, 0%, 100%);
-      width: 200px;
+      width: 300px;
       height: auto;
     }
 
